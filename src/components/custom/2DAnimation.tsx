@@ -37,7 +37,10 @@ const expertiseData = [
 
 export const Animation2D = () => {
   return (
-    <div className="container mt-auto mb-auto mx-auto my-0.5 pt-10 px-4">
+    <div
+      className="container mt-auto mb-auto mx-auto my-0.5 pt-10 px-4"
+      id="animation"
+    >
       <div className="text-center mb-0">
         <h1 className="text-4xl font-bold mb-2">2D ANIMATION</h1>
         <p className="text-gray-600">
