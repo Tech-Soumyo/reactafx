@@ -18,12 +18,12 @@ function Headers() {
           {["HOME", "ABOUT", "EXPERTISE", "PROJECTS", "CONTACT"].map(
             (item: string) => (
               <div className="relative group" key={item}>
-                <Link
-                  to={`/${item.toLowerCase()}`}
+                <a
+                  href={`#${item.toLowerCase()}`}
                   className="px-4 py-2 text-gray-700 font-medium transition-all duration-500 ease-in-out group-hover:text-white"
                 >
                   {item}
-                </Link>
+                </a>
                 <div className="absolute inset-0 bg-red-800 opacity-0 scale-75 rounded-full transition-all duration-500 delay-300 group-hover:opacity-100 group-hover:scale-100 -z-10"></div>
               </div>
             )
@@ -48,14 +48,14 @@ function Headers() {
         <nav className="flex flex-col items-center py-4 space-y-4">
           {["HOME", "ABOUT", "EXPERTISE", "PROJECTS", "CONTACT"].map(
             (item: string) => (
-              <Link
+              <a
                 key={item}
-                to={`/${item.toLowerCase()}`}
+                href={`#${item.toLowerCase()}`}
                 className="text-gray-700 text-lg font-medium hover:text-red-800 transition-all duration-300"
                 onClick={() => setMenuOpen(false)} // Close menu on click
               >
                 {item}
-              </Link>
+              </a>
             )
           )}
         </nav>
