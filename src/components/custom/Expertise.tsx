@@ -36,7 +36,10 @@ const expertiseData = [
 ];
 export const Expertise = () => {
   return (
-    <div className="container mt-12 mb-auto mx-auto my-0.5 pt-10 px-4">
+    <section
+      className="container mt-12 mb-auto mx-auto my-0.5 pt-10 px-4"
+      id="expertise"
+    >
       {/* Heading Section */}
       <div className="text-center mb-0">
         <h1 className="text-4xl font-bold mb-2">OUR EXPERTISE</h1>
@@ -77,6 +80,6 @@ export const Expertise = () => {
           ))}
         </CarouselContent>
       </Carousel>
-    </div>
+    </section>
   );
 };
