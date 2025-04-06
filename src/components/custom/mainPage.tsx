@@ -3,6 +3,8 @@ import { Animation2D } from "./2DAnimation";
 import { ContactUs } from "./Contact";
 import { Expertise } from "./Expertise";
 import { Explainer3D } from "./Explainer3D";
+import ContactSection from "./FeedBack";
+import Foooter from "./Foooter";
 import Headers from "./Headers";
 import { OneCarousel } from "./OneCorousel";
 import { SkateShopSection } from "./SkateShop";
@@ -22,6 +24,8 @@ export const MainPage = () => {
       <Explainer3D />
       <TestimonialCarousel />
       <ContactUs />
+      <ContactSection />
+      <Foooter />
     </div>
   );
 };
