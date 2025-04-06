@@ -1,10 +1,13 @@
 import banner from "../../assets/banner_img.png";
 import { Button } from "../ui/button";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
-import Autoplay from "embla-carousel-autoplay"; // ✅ Import autoplay extension
+import Autoplay from "embla-carousel-autoplay";
 import { StatCards } from "./StatCards";
+import { useNavigate } from "react-router-dom";
 
 export const OneCarousel = () => {
+  const navigate = useNavigate();
+
   const slides = [
     { title: "Best Production House", img: banner },
     { title: "Creative & Professional", img: banner },
@@ -13,22 +16,22 @@ export const OneCarousel = () => {
 
   return (
     <main className="flex-1 ">
-      <section className="container mx-auto px-4 py-12 md:py-24">
+      <section className="container mx-auto px-4 pt-5 pb-12">
         <Carousel
           opts={{ loop: true }}
           plugins={[Autoplay({ delay: 3000 })]}
-          className="z-[-99]"
+          className=""
         >
           {" "}
           {/* ✅ Uses embla autoplay */}
-          <CarouselContent className="z-[-99]">
+          <CarouselContent>
             {slides.map((slide, index) => (
               <CarouselItem
                 key={index}
-                className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center "
+                className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
               >
                 {/* Text Section */}
-                <div className="space-y-6">
+                <div className="space-y-6 relative z-10">
                   <div className="flex space-x-2">
                     <div className="h-2 w-12 bg-blue-600 rounded"></div>
                     <div className="h-2 w-6 bg-red-600 rounded"></div>
@@ -41,13 +44,16 @@ export const OneCarousel = () => {
                   <Button
                     variant="link"
                     className="mt-6 px-0 font-semibold text-gray-900 hover:bg-transparent hover:text-red-600 transition-colors"
+                    onClick={() => {
+                      navigate(`/read`);
+                    }}
                   >
                     READ MORE
                   </Button>
                 </div>
 
                 {/* Image Section */}
-                <div className="relative h-[400px] md:h-[500px] ">
+                <div className="relative h-[400px] md:h-[500px] z-10">
                   <img
                     src={slide.img}
                     alt={slide.title}

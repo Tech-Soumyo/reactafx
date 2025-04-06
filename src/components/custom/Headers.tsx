@@ -9,7 +9,6 @@ function Headers() {
   return (
     <header className="sticky top-0 left-0 w-full bg-white shadow-md z-50">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        {/* Logo */}
         <Link to="/" className="flex items-center">
           <img src={logo} alt="Logo" className="h-12 w-32 object-contain" />
         </Link>
