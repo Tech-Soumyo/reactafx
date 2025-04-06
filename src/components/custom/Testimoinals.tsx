@@ -80,13 +80,13 @@ export function TestimonialCarousel() {
   const visibleTestimonials = getVisibleTestimonials();
 
   return (
-    <section className="bg-[#3a1f8d] py-36 lg:py-56 md:py-60 sm:py-64 ">
+    <section className="bg-[#3a1f8d] py-12  ">
       <div className="container mx-auto px-4 z-[-99]">
         <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16">
           Testimonial
         </h2>
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-16 mb-12 ">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-16  ">
           {visibleTestimonials.map((testimonial, index) => (
             <TestimonialCard
               key={testimonial.id}
@@ -132,8 +132,8 @@ function TestimonialCard({ testimonial, isActive }: TestimonialCardProps) {
       className={cn(
         "relative flex flex-col items-center px-6 py-16 mb-16 mt-16 rounded-lg transition-all duration-300 ",
         isActive
-          ? "bg-white text-gray-800 z-10 shadow-xl scale-105 w-[380px] h-[300px] md:w-[440px]  md:h-[440px] font-extrabold" // Active card larger
-          : "bg-[#b11313] text-white scale-95 w-[300px] md:w-[320px] h-[300px] md:h-[420px] sm:w-[360px] sm:h-[360px] " // Inactive cards same size
+          ? "bg-white text-gray-800 z-10 shadow-xl scale-105 w-[380px] h-[300px] md:w-[440px]  md:h-[440px] font-extrabold"
+          : "bg-[#b11313] text-white scale-95 w-[300px] md:w-[320px] h-[300px] md:h-[420px] sm:w-[360px] sm:h-[360px] "
       )}
     >
       <div className="absolute -top-14 rounded-full border-4 border-[#3a1f8d] bg-white p-1 overflow-hidden shadow-2xl shadow-amber-50 ">
