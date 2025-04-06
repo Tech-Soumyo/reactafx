@@ -3,11 +3,8 @@ import { Button } from "../ui/button";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { StatCards } from "./StatCards";
-import { useNavigate } from "react-router-dom";
 
 export const OneCarousel = () => {
-  const navigate = useNavigate();
-
   const slides = [
     { title: "Best Production House", img: banner },
     { title: "Creative & Professional", img: banner },
@@ -15,8 +12,8 @@ export const OneCarousel = () => {
   ];
 
   return (
-    <main className="flex-1 ">
-      <section className="container mx-auto px-4 pt-5 pb-12">
+    <main className="flex-1 " id="home">
+      <section className="container mx-auto px-4 pt-5 pb-12" id="about">
         <Carousel
           opts={{ loop: true }}
           plugins={[Autoplay({ delay: 3000 })]}
@@ -44,11 +41,8 @@ export const OneCarousel = () => {
                   <Button
                     variant="link"
                     className="mt-6 px-0 font-semibold text-gray-900 hover:bg-transparent hover:text-red-600 transition-colors"
-                    onClick={() => {
-                      navigate(`/read`);
-                    }}
                   >
-                    READ MORE
+                    <a href="#animation">READ MORE</a>
                   </Button>
                 </div>
 
