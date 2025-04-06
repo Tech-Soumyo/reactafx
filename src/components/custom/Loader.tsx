@@ -2,7 +2,7 @@ import loaderImage from "../../assets/logo-skeleton.png";
 
 const Loader = () => {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-[#3a1f8d] z-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
       <img
         src={loaderImage}
         alt="Loading..."
