@@ -13,12 +13,8 @@ export const OneCarousel = () => {
 
   return (
     <main className="flex-1 " id="home">
-      <section className="container mx-auto px-4 pt-5 pb-12" id="about">
-        <Carousel
-          opts={{ loop: true }}
-          plugins={[Autoplay({ delay: 3000 })]}
-          className=""
-        >
+      <section className="container mx-auto px-4 pt-5 pb-12">
+        <Carousel opts={{ loop: true }} plugins={[Autoplay({ delay: 3000 })]}>
           {" "}
           {/* ✅ Uses embla autoplay */}
           <CarouselContent>
@@ -42,7 +38,7 @@ export const OneCarousel = () => {
                     variant="link"
                     className="mt-6 px-0 font-semibold text-gray-900 hover:bg-transparent hover:text-red-600 transition-colors"
                   >
-                    <a href="#animation">READ MORE</a>
+                    <a href="#">READ MORE</a>
                   </Button>
                 </div>
 

@@ -17,10 +17,7 @@ const videos = [
 
 const VideoSection = () => {
   return (
-    <section
-      className="pt-10 sm:pt-6 bg-white text-center mb-[-240px] sm:mb-[-80px] md:mb-[-120px] lg:mb-[120px]"
-      id="projects"
-    >
+    <section className="pt-10 sm:pt-6 bg-white text-center mb-[-240px] sm:mb-[-80px] md:mb-[-120px] lg:mb-[120px]">
       <h2 className="text-3xl font-bold text-gray-800">AFX Video</h2>
       <p className="text-gray-500 mt-2 mb-8 md:mb-8 sm:mb-8 max-w-2xl mx-auto">
         There are many variations of passages of Lorem Ipsum available, but the

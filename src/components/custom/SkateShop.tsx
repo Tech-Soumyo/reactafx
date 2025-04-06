@@ -6,7 +6,10 @@ export const SkateShopSection = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between px-4 md:px-16 pb-4 sm:pb-2 pt-2 sm:pt-4 md:pt-3 max-w-7xl mx-auto mt-[-120px]">
+    <section
+      id="about"
+      className="flex flex-col md:flex-row items-center justify-between px-4 md:px-16 pb-4 sm:pb-2 pt-2 sm:pt-4 md:pt-3 max-w-7xl mx-auto mt-[-120px]"
+    >
       <div className="relative w-full md:w-3/4 flex justify-center ">
         <img
           src={skate}

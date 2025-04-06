@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const StatCards = () => {
   return (
     <section className="container mx-auto px-24 py-5">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1 place-items-center ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 place-items-center ">
         <StatCard number={3000} label="Projects" />
         <StatCard number={1000} label="Clients" />
         <StatCard number={10} label="Years" />
