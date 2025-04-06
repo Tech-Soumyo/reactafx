@@ -1,5 +1,4 @@
-// src/components/Loader.jsx
-import loaderImage from "../../assets/logo-skeleton.png"; // Replace with your loader image
+import loaderImage from "../../assets/logo-skeleton.png";
 
 const Loader = () => {
   return (
@@ -7,7 +6,7 @@ const Loader = () => {
       <img
         src={loaderImage}
         alt="Loading..."
-        className="w-96 h-96 object-contain animate-spin" // Adjust size as needed
+        className="w-96 h-96 object-contain animate-spin"
       />
     </div>
   );
