@@ -1,10 +1,18 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // Importing icons for hamburger menu
 import logo from "../../assets/logo.png";
 
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "../ui/sheet";
+
 function Headers() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  // const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 left-0 w-full bg-white shadow-md z-50">
@@ -12,10 +20,8 @@ function Headers() {
         <Link to="/" className="flex items-center">
           <img src={logo} alt="Logo" className="h-12 w-32 object-contain" />
         </Link>
-
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {["HOME", "ABOUT", "EXPERTISE", "PROJECTS", "CONTACT"].map(
+          {["HOME", "EXPERTISE", "ABOUT", "PROJECTS", "CONTACT"].map(
             (item: string) => (
               <div className="relative group" key={item}>
                 <a
@@ -31,34 +37,40 @@ function Headers() {
         </nav>
 
         {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-gray-700"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-      </div>
-
-      {/* Mobile Navigation (Dropdown) */}
-      <div
-        className={`md:hidden fixed top-16 left-0 w-full bg-white shadow-lg transition-transform duration-300 ease-in-out ${
-          menuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-        }`}
-      >
-        <nav className="flex flex-col items-center py-4 space-y-4">
-          {["HOME", "ABOUT", "EXPERTISE", "PROJECTS", "CONTACT"].map(
-            (item: string) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="text-gray-700 text-lg font-medium hover:text-red-800 transition-all duration-300"
-                onClick={() => setMenuOpen(false)} // Close menu on click
-              >
-                {item}
-              </a>
-            )
-          )}
-        </nav>
+        <div className="md:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <button className="text-gray-700">
+                <Menu size={28} />
+              </button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-3/4 sm:w-1/2 px-2 ">
+              <SheetHeader>
+                <SheetTitle className="flex justify-center items-center pt-4 ">
+                  <img
+                    src={logo}
+                    alt="Logo"
+                    className="h-16 w-auto object-contain"
+                  />
+                </SheetTitle>
+              </SheetHeader>
+              <nav className="flex flex-col space-y-4 mt-4 text-center">
+                {["HOME", "EXPERTISE", "ABOUT", "PROJECTS", "CONTACT"].map(
+                  (item) => (
+                    <SheetClose asChild key={item}>
+                      <a
+                        href={`#${item.toLowerCase()}`}
+                        className="text-gray-700 text-lg font-medium hover:text-red-800 transition-all"
+                      >
+                        {item}
+                      </a>
+                    </SheetClose>
+                  )
+                )}
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   );
