@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const StatCards = () => {
   return (
-    <section className="container mx-auto px-4 py-12 md:py-24">
+    <section className="container mx-auto px-4 py-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1 place-items-center ">
         <StatCard number={3000} label="Projects" />
         <StatCard number={1000} label="Clients" />
@@ -20,7 +20,7 @@ function StatCard({ number, label }: { number: number; label: string }) {
   return (
     <div>
       <motion.div
-        className="flex flex-col items-center justify-center bg-gray-100 rounded-xl w-16 h-16 sm:w-40 sm:h-40 lg:w-32 lg:h-32"
+        className="flex flex-col items-center justify-center bg-gray-100 rounded-xl w-40 h-40 sm:w-40 sm:h-40 lg:w-32 lg:h-32"
         whileHover={{
           scale: 1.1, // Slight scale effect on hover
           transition: { duration: 0.3 },
