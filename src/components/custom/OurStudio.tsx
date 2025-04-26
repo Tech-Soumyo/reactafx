@@ -1,8 +1,8 @@
 import { Button } from "../ui/button";
-import skate from "../../assets/shop.png";
+import ourstudio from "../../assets/studio.png";
 import { useNavigate } from "react-router-dom";
 
-export const SkateShopSection = () => {
+export const OurStudio = () => {
   const navigate = useNavigate();
 
   return (
@@ -12,14 +12,14 @@ export const SkateShopSection = () => {
     >
       <div className="relative w-full md:w-3/4 flex justify-center ">
         <img
-          src={skate}
-          alt="Skate Shop"
+          src={ourstudio}
+          alt="Our Studio"
           className="object-contain w-[2000px] h-[1000px] max-w-full max-h-full z-[-99] mb-[-140px] sm:mb-[-40px]"
         />
       </div>
 
       <div className="w-full md:w-1/4 space-y-6 text-center md:text-left  ">
-        <h2 className="text-3xl font-bold">Our Skate Shop</h2>
+        <h2 className="text-3xl font-bold">Our Studio</h2>
         <p className="text-gray-600">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alterationThere are many variatioThere are
@@ -30,9 +30,14 @@ export const SkateShopSection = () => {
         <Button
           variant={"link"}
           className="bg-white text-black text-2xl font-bold py-2 rounded-md hover:bg-white hover:font-extrabold hover:text-4xl hover:text-violet-400 border-0"
-          onClick={() => navigate("/buy")}
+          onClick={() => {
+            const contactSection = document.getElementById("contact");
+            if (contactSection) {
+              contactSection.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
         >
-          Buy Now
+          Contact Now
         </Button>
       </div>
     </section>
