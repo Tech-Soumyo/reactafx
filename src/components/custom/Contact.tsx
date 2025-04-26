@@ -2,7 +2,7 @@ import { Button } from "../ui/button";
 
 export const ContactUs = () => {
   return (
-    <section className="py-20 bg-white" id="contact">
+    <section className="py-24 bg-white" id="contact">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-800">Contact Us</h2>
       </div>
@@ -15,7 +15,7 @@ export const ContactUs = () => {
               className="border rounded-lg p-3 w-full outline-none border-none  focus:border-red-500 shadow-md"
             />
             <input
-              type="text"
+              type="number"
               placeholder="Phone Number"
               className="border rounded-lg p-3 w-full outline-none border-none  focus:border-red-500 shadow-md"
             />

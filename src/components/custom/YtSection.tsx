@@ -8,11 +8,11 @@ import {
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // For custom arrow icons
 
 const videos = [
-  "https://www.youtube.com/embed/MYoH3na05a8?si=GolPMQqpGnx7eTwT",
-  "https://www.youtube.com/embed/MYoH3na05a8?si=GolPMQqpGnx7eTwT",
-  "https://www.youtube.com/embed/MYoH3na05a8?si=GolPMQqpGnx7eTwT",
-  "https://www.youtube.com/embed/MYoH3na05a8?si=GolPMQqpGnx7eTwT",
-  "https://www.youtube.com/embed/MYoH3na05a8?si=GolPMQqpGnx7eTwT",
+  "https://www.youtube.com/embed/DS8Yqfiu00M?si=e28nLAwAsEo8aobP",
+  "https://www.youtube.com/embed/ETui_auTd2w?si=HWc22BYTdNb3Np9y",
+  "https://www.youtube.com/embed/NQWJqfgaOLg?si=LFqr4_gLKYFm1EZV",
+  "https://www.youtube.com/embed/zU_3BGMUIzY?si=fjyVOMsbyPeKBEDZ",
+  "https://www.youtube.com/embed/l1Nce-XsRK8?si=vFUokPwYSyRs8EWF",
 ];
 
 const VideoSection = () => {

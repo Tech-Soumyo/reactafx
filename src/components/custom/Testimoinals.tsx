@@ -8,9 +8,9 @@ import {
   CarouselApi,
 } from "../ui/carousel"; // Import shadcn/ui Carousel components
 import { cn } from "../../lib/utils";
-import test2 from "../../assets/test2.png";
-import test1 from "../../assets/test1.png";
-import test3 from "../../assets/test3.png";
+import photo1 from "../../assets/photo1.png";
+import photo2 from "../../assets/photo2.png";
+import photo3 from "../../assets/photo3.png";
 
 type Testimonial = {
   id: number;
@@ -22,38 +22,38 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Disol",
-    avatar: test1,
+    name: "Sreemon Das",
+    avatar: photo2,
     quote:
-      "humour, or randomised words which don't look even slightly believable. If you are",
+      "Art enables us to find ourselves and lose ourselves at the same time.",
   },
   {
     id: 2,
-    name: "Jone Lo",
-    avatar: test3,
+    name: "Sanjib XXX",
+    avatar: photo3,
     quote:
-      "humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure",
+      "Art enables us to find ourselves and lose ourselves at the same time.",
   },
   {
     id: 3,
-    name: "Michale",
-    avatar: test2,
+    name: "Name5 XXX",
+    avatar: photo1,
     quote:
-      "humour, or randomised words which don't look even slightly believable. If you are",
+      "Art enables us to find ourselves and lose ourselves at the same time.",
   },
   {
     id: 4,
-    name: "Sarah",
-    avatar: test2,
+    name: "Name4 XXX",
+    avatar: photo1,
     quote:
-      "humour, or randomised words which don't look even slightly believable. If you are going to use a passage",
+      "Art enables us to find ourselves and lose ourselves at the same time.",
   },
   {
     id: 5,
-    name: "David",
-    avatar: test2,
+    name: "Soutrik XXX",
+    avatar: photo1,
     quote:
-      "humour, or randomised words which don't look even slightly believable. If you are going to use",
+      "Art enables us to find ourselves and lose ourselves at the same time.",
   },
 ];
 

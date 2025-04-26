@@ -4,40 +4,40 @@ import Autoplay from "embla-carousel-autoplay";
 
 const expertiseData = [
   {
-    title: "Skateboard",
+    title: "Expertise 1",
     description:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.",
+      "Our award-winning animation studio crafts compelling stories through innovative design and cutting-edge visual technology.",
     color: "bg-red-700",
   },
   {
-    title: "Skateboard",
+    title: "Expertise 2",
     description:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.",
+      "Our award-winning animation studio crafts compelling stories through innovative design and cutting-edge visual technology.",
     color: "bg-purple-800",
   },
   {
-    title: "Skateboard",
+    title: "Expertise 3",
     description:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.",
+      "Our award-winning animation studio crafts compelling stories through innovative design and cutting-edge visual technology.",
     color: "bg-blue-600",
   },
   {
-    title: "Skateboard",
+    title: "Expertise 4",
     description:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.",
+      "Our award-winning animation studio crafts compelling stories through innovative design and cutting-edge visual technology.",
     color: "bg-green-600",
   },
   {
-    title: "Skateboard",
+    title: "Expertise 5",
     description:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.",
+      "Our award-winning animation studio crafts compelling stories through innovative design and cutting-edge visual technology.",
     color: "bg-blue-600",
   },
 ];
 export const Expertise = () => {
   return (
     <section
-      className="container mt-12 mb-auto mx-auto my-0.5 pt-10 px-4"
+      className="container mt-12 mb-auto mx-auto my-0.5 pt-24 px-4"
       id="expertise"
     >
       {/* Heading Section */}

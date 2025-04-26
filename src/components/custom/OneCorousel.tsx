@@ -1,4 +1,6 @@
-import banner from "../../assets/banner_img.png";
+import banner1 from "../../assets/banner_img_1.png";
+import banner2 from "../../assets/banner_img_2.png";
+import banner3 from "../../assets/banner_img_3.png";
 import { Button } from "../ui/button";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
@@ -6,9 +8,9 @@ import { StatCards } from "./StatCards";
 
 export const OneCarousel = () => {
   const slides = [
-    { title: "Best Production House", img: banner },
-    { title: "Creative & Professional", img: banner },
-    { title: "Innovative Solutions", img: banner },
+    { title: "Best Production House", img: banner1 },
+    { title: "Creative & Professional", img: banner2 },
+    { title: "Innovative Solutions", img: banner3 },
   ];
 
   return (
