@@ -2,6 +2,17 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+## Steps to Setup the Project
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash\nsource ~/.bashrc
+nvm install 18
+touch ~/.zshrc
+source ~/.zshrc
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash\nsource ~/.zshrc\nnvm install 18\nnvm use 18
+nvm use 18
+npm install vite --save-dev
+npm run dev
+```
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
